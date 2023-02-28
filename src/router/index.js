@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from "vue-router"
+import { createRouter, createWebHistory } from "vue-router"
 
 const routes = [
 	{
@@ -41,10 +41,25 @@ const routes = [
 		name: "Props Comput",
 		component: () => import("../components/PropsComput.vue"),
 	},
+	{
+		path: "/user/:id",
+		name: "User",
+		component: () => import("../views/UserEdit.vue"),
+	},
+	{
+		path: "/product",
+		name: "Product",
+		component: () => import("../components/Products/AppProducts.vue"),
+	},
+	{
+		path: "/pokemon",
+		name: "Pokemon",
+		component: () => import("../views/PokemonsView.vue"),
+	},
 ]
 
 const router = createRouter({
-	history: createWebHashHistory(),
+	history: createWebHistory(),
 	routes,
 })
 

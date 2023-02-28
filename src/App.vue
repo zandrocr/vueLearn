@@ -3,10 +3,6 @@
 		<button :data-button="toggleButton == true ? '' : 'open'" @click="menuClick">Menu</button>
 		<div v-for="nav in routesNav" :key="nav.name">
 			<router-link :to="nav.path" @click="menuClick">{{ nav.name }}</router-link>
-			<!-- <routes /> -->
-			<!-- <router-link to="/" @click="menuClick">The Header</router-link>
-			<router-link to="/submitForm" @click="menuClick">Submit Form</router-link>
-			<router-link to="/baseAlert" @click="menuClick">Base Alert</router-link> -->
 		</div>
 	</nav>
 	<router-view />
@@ -23,7 +19,7 @@
 			menuClick() {
 				this.toggleButton = !this.toggleButton
 			},
-		},
+		}
 	}
 </script>
 

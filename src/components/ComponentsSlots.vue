@@ -18,7 +18,13 @@
 			// console.log(this.$el, this.$slots)
 		},
 		data() {
-			return {}
+			return {
+				user: {
+					firstName: "John",
+					LastName: "Doe",
+					email: "john@doe.com",
+				},
+			}
 		},
 	}
 </script>

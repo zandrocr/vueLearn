@@ -1,7 +1,9 @@
 <template>
 	<div class="card">Lorem inpsum dolar sit, ament, consectetur adipsiscing eli.</div>
 </template>
-<script></script>
+
+<script>
+</script>
 
 <style scoped>
 	.card {
