@@ -11,8 +11,8 @@
 		<form @submit.prevent="onSubmit" class="formUser">
 			<input type="text" name="firstName" placeholder="Name" v-model="newUser.firstName" />
 			<input type="text" name="lastName" placeholder="Last Name" v-model="newUser.lastName" />
-			<input type="text" name="email" placeholder="Email" v-model="newUser.email" />
 			<button>Update user</button>
+			<input type="text" name="email" placeholder="Email" v-model="newUser.email" />
 		</form>
 
 		{{ $store.state.user.firstName }}

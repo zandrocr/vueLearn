@@ -3,7 +3,7 @@ import { createStore } from "vuex"
 export default createStore({
 	state: {
 		user: {
-			id: 1,
+			id: 50,
 			firstName: "Tomas",
 			lastName: "Tuban",
 			email: "kenaa@example.com",
@@ -28,6 +28,9 @@ export default createStore({
 		},
 	},
 	mutations: {
+		storeApi(props) {
+			props.name
+		},
 		storeUser(state, data) {
 			state.user = data
 		},
